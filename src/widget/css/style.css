@@ -1,0 +1,182 @@
+@charset "UTF-8";
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #7a7e83;
+}
+body {
+    font-size: 15px;
+}
+input.crl-input {
+	background-color: #fff;
+	width: 100%;
+	border-radius: 4px;
+    border: 2px solid rgba(122, 126, 131, 0.65);
+	margin: 10px auto;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	color: #333333;
+}
+input.crl-button, div.crl-button,span.crl-button{
+	text-align: center;
+    font-size: 20px;
+   	background-color: #289494;
+	width: 100%;
+	border-radius: 4px;
+    /*border: 2px solid rgba(122, 126, 131, 0.65);*/
+	margin: 10px auto;
+	padding: 10px 0;
+    color: #ffffff;
+    font-weight: bold;
+}
+span.crl-button{ display:inline-block; padding:5px 0;}
+input.crl-button:active, div.crl-button:active {
+    color: #fff;
+    background-color: #43b5b4;
+    border-color: #43b5b4;
+}
+.crl-help-block {
+	padding-left: 2px;
+	color: #7a7e83;
+	font-size: 13px;
+}
+.crl-text-row {
+	margin: 10px auto;
+	width: 100%;
+    display: flex;
+    display: -webkit-box;
+    box-sizing: border-box;
+    justify-content：center
+    height: 34px;
+}
+.left-text {
+	font-size:14px;
+	font-weight:bold;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.aui-bar .aui-left {
+	position: absolute;
+    left: 33px;
+    width: auto;
+    margin: 0;
+    font-size:14px;
+    font-weight:bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.aui-nav {
+	padding-top: 5px;
+}
+
+.aui-nav .aui-bar-tab .crl-icon{
+	margin-top:7px;
+	height:17px;
+	background-size:100% 100%;
+}
+
+
+.aui-nav .aui-bar-tab .crl-icon.crl-icon-get {
+	background-image:url('../image/heyan.png');
+	width: 21px;
+}
+.aui-nav .aui-bar-tab li.active .crl-icon.crl-icon-get {
+	background-image:url('../image/heyan_on.png');
+}
+.aui-nav .aui-bar-tab .crl-icon.crl-icon-count {
+	background-image:url('../image/count.png');
+	width: 24px;
+}
+.aui-nav .aui-bar-tab li.active .crl-icon.crl-icon-count{
+	background-image:url('../image/count_on.png');
+}
+.aui-nav .aui-bar-tab .crl-icon.crl-icon-wd {
+    background-image:url('../image/wangdian.png');
+    width: 24px;
+}
+.aui-nav .aui-bar-tab li.active .crl-icon.crl-icon-wd{
+    background-image:url('../image/wangdian_on.png');
+}
+.aui-nav .aui-bar-tab .crl-icon.crl-icon-zd {
+    background-image:url('../image/zhandian.png');
+    width: 24px;
+}
+.aui-nav .aui-bar-tab li.active .crl-icon.crl-icon-zd{
+    background-image:url('../image/zhandian_on.png');
+}
+.aui-nav .aui-bar-tab .crl-icon.crl-icon-mine {
+	background-image:url('../image/mine.png');
+	width: 24px;
+}
+.aui-nav .aui-bar-tab li.active .crl-icon.crl-icon-mine{
+	background-image:url('../image/mine_on.png');
+}
+
+.divider-vertical {
+	background-color: rgba(51, 51, 51, 0.55);
+	width: 1px;
+}
+.text-reg, .text-forget{
+	text-align: center;
+    color: #333333;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: bold;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    box-sizing: border-box;
+}
+.text-reg, .pass-sms-login{
+	text-align: center;
+    color: #333333;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 15px;
+    font-weight: bold;
+    box-flex: 1;
+    -webkit-box-flex: 1;
+    box-sizing: border-box;
+}
+/* 交易记录 */
+.order-item {
+	font-size: 14px;
+}
+.order-no {
+	color: #333;
+    white-space: nowrap;
+}
+.order-item .order-info, .order-item .order-status {
+	margin-top:10px;
+}
+.order-item .order-info .order-time {
+	color: #7a7e83;
+    white-space: nowrap;
+}
+.order-item .order-status.nopay {
+    color: #f00;
+}
+/* mui */
+.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea {
+	color: #333333;
+}
+.mui-input-disabled, .mui-input-disabled label~input[disabled] {
+	color: #696969;
+}
+.mui-table-view-cell.order-item {
+	padding: 16px 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+/*交易列表*/
+.trade_list{ background:#ffffff;}
+.trade_list dd{ padding:2% 3%; border-bottom:1px solid #d9d9d9;}
+.trade_list dd div{ text-align:right;}
+.trade_list dd div strong{ float:left; font-weight:normal;}
+.trade_list dd p{ margin:auto;}
+.trade_list dd p strong{ font-weight:normal; color:#333333; padding-right:20px;}

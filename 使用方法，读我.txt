@@ -1,0 +1,40 @@
+﻿注：cmd中执行的皆为方括号内的内容，不包括方括号！
+step1: 搜索nodejs，下载并安装最新版本
+cmd中执行【 npm -v】，出现版本号即正确安装
+
+step2：
+接下来将要下载一堆东西，设置淘宝镜像，通过淘宝镜像地址来下载比较快（window电脑）
+
+  cmd执行【npm install -g cnpm --registry=https://registry.npm.taobao.org】
+
+安装webpak环境下开发vue项目的一系列的依赖包
+
+  cmd执行【npm install】
+
+安装完成后，会有几个warn警告，直接忽视。（这些包与你的系统不兼容，但不影响）
+
+step3:
+查看demo的效果，两种方式
+
+方式一：
+直接浏览器打开index.html观看
+方式二：
+
+通过启动本地服务器查看，使用cmd执行 【npm run dev】
+
+step4:
+demo讲解：
+方式一：浏览器打开index不用说，直接看引入了哪个JS，引入了dist目录下的build.js.在build.js中已经将所有的js和CSS文件引入，不必关心是过程，只看结果。
+
+方式二：执行cmd启动服务器模式查看，默认会自动查找当前路径下是否有webpack.config.js文件，没有就会执行package,json。在webpack.config.js文件中有一项参数entry，设置的是./src/entry.js，代表启动服务器从哪里开始执行，就是我们设置的从entry.js开始执行。
+。
+而entry.js是一个JS文件，js执行需要依赖于.html文件,所以将根html文件设置为app.vue（理解为html页面即可）。所以app.vue就是整个页面。
+
+
+其中测试的地方主要有：
+1.import './style/style.css';  引入CSS文件（如同传统的link标签引入css文件，换了种方式）
+2.import Vue from 'vue';       引入我们安装的模块（所有安装的模块可以再package.json中看到）
+3.import firstcomponent from './components/first.vue'    引入 我们自己写的vue单页面组件
+（这里如同script标签引入一段JS）
+
+4.import { Header, Button} from 'mint-ui'; 引入第三方框架库，并使用（例如传统的使用script标签引入jquery,这里等于只引入了 mint-ui其中的2个组件也就是Header,Button}   ）
